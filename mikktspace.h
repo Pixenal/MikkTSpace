@@ -27,7 +27,7 @@
 #define MIKKT_FORCE_INLINE __forceinline
 #define MIKKT_NOINLINE __declspec(noinline)
 #else
-#define STUC_FORCE_INLINE __attribute__((always_inline)) static inline
+#define MIKKT_FORCE_INLINE __attribute__((always_inline)) static inline
 #define MIKKT_NOINLINE __attribute__ ((noinline))
 #endif
 
@@ -345,7 +345,7 @@ float CalcTexArea(const SMikkTSpaceContext * pContext, const int32_t indices[])
 	return fSignedAreaSTx2<0 ? (-fSignedAreaSTx2) : fSignedAreaSTx2;
 }
 
-MIKKT_FORCE_INLINE
+static inline
 void MergeVertsFast(int32_t piTriList_in_and_out[], STmpVert pTmpVert[], const SMikkTSpaceContext * pContext, const int32_t iL_in, const int32_t iR_in)
 {
 	// make bbox
