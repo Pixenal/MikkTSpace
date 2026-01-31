@@ -20,6 +20,7 @@
  *     misrepresented as being the original software.
  *  3. This notice may not be removed or altered from any source distribution.
  */
+//this is a modified fork of MikkTSpace, fork Copyright 2026 Caleb Dawson
 
 #include <assert.h>
 #include <stdlib.h>
